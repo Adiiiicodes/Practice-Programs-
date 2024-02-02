@@ -1,0 +1,45 @@
+#include<stdio.h>
+int main() {
+printf("WELCOME TO MY CALCULATOR 🙏");
+
+int x;
+int y;
+char operation; /* a for addition , s for subtraction , m for multiplication 
+ d for divsion , r for remainder*/  
+
+printf("Enter first number : ");
+scanf("%d", &x);
+
+printf("Now Kindly enter the second number :");
+scanf("%d",y);
+
+printf("Now please select the operation you want to perform , enter a for Addition , s for subraction , d for divison , m for multiplication and n for remainder  ");
+scanf(" %c", &operation);
+
+if (operation == 'a') {
+    printf("The sum is : %d \n", x+y);
+ 
+ } if else (operation == 's') {
+    printf("The diffrence is : %d \n", x-y);
+
+} 
+    if else (operation == 'm') {
+        printf("The product is : %d \n", x*y);
+    }
+       if else (operation == 'd') {
+        if (y! = 0) {
+            printf("The quotient is : %d", x/y);
+        } else {
+            printf("Cant be operated as denominator is 0 \n");
+        }
+       } if else (operation == 'r') {
+        if (y != 0 ) {
+            printf("The remainder is : %d \n", x%y);
+        } else {
+            printf(" The remainder cant be calculated as denominator is 0\n");
+        }
+       }
+  
+printf("Thank you for using 🙏 \n");
+
+}
